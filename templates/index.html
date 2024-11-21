@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+	<!-- buscador de iconos: https://fontawesome.com/search -->
+	<!--- basic page needs
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>Kards</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/vendor.css') }}">
+
+	<!-- script -->
+	<script src="{{ url_for('static', filename='js/modernizr.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/pace.min.js') }}"></script>
+
+	<!-- favicons
+	================================================== -->
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+	<header>
+		<div class="row">
+
+			<div class="top-bar">
+				<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+				<div class="logo">
+					<a href="index.html">Mi portfolio</a>
+				</div>
+
+
+				<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll" href="#about" title="">Habilidades</a></li>
+						<li><a class="smoothscroll" href="#services" title="">Destacados</a></li>
+						<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll" href="#contact" title="">Contacto</a></li>
+					</ul>
+				</nav>
+			</div> <!-- /top-bar -->
+
+			<button class="custom-btn btn-8"><span>Mi CV</span></button>
+
+		</div> <!-- /row -->
+	</header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+	<section id="intro">
+
+		<div class="intro-overlay"></div>
+
+		<div class="intro-content">
+			<div class="row">
+
+				<div class="col-twelve">
+
+					<h5>Hello World!</h5>
+					<h1>I'm Tomás Cipriano.</h1>
+
+					<p class="intro-position">
+						<span>Back-end Developer</span>
+						<span>Data Engineer</span>
+						<span>UI/UX Designer</span>
+
+					</p>
+
+
+				</div>
+
+			</div>
+		</div> <!-- /intro-content -->
+
+		<ul class="intro-social">
+			<li><a href="https://github.com/TomasCipriano-66"><i style="scale: 2.6;"
+						class="fa-brands fa-github"></i></a></li>
+			<li><a href="#"><i style="scale: 2.6; margin-left: 18px;" class="fa-brands fa-linkedin"></i></a></li>
+			<li><a href="#"><i style="scale: 2.6; margin-left: 18px;" class="fa-brands fa-trello"></i></a></li>
+			<li><a href="#" id="copy-email"><i style="scale: 2.6; margin-left: 18px;" class="fa-solid fa-at"></i></a>
+			</li>
+		</ul> <!-- /intro-social -->
+
+	</section> <!-- /intro -->
+
+
+	<!-- about section
+   ================================================== -->
+	<section id="about">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>About</h5>
+				<h1>Permitanme introducirme.</h1>
+
+				<div class="intro-info">
+
+					<img style="scale: 1.4; margin-top: 28px;" src="{{ url_for('static', filename='images/me.jpg') }}"
+						alt="Profile Picture">
+
+
+					<p class="lead">Soy Tomas Cipriano me centro en el dearrollo de backend y la administracion de bases
+						de datos
+						soy egresado en la carrera de ingenieria en sistemas y me considero una persona flexible ya que
+						me es facial
+						adaptarme a cualquier grupo de trabajo.</p>
+				</div>
+
+			</div>
+
+			<section class="skills container">
+				<h1>Skills</h1>
+
+				<div class="row">
+					<div class="item">
+						<div class="item-text">
+							<span>JavaScript</span>
+							<span class="w-90">90%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-90"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-text">
+							<span>Python</span>
+							<span class="w-75">75%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-75"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-text">
+							<span>HTML5</span>
+							<span class="w-85">85%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-85"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-text">
+							<span>CSS3</span>
+							<span class="w-60">60%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-60"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-text">
+							<span>SQL</span>
+							<span class="w-75">75%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-75"></div>
+						</div>
+					</div>
+
+					<h1>Programas</h1>
+
+					<div class="item">
+						<div class="item-text">
+							<span>Visual Studio</span>
+							<span class="w-90">90%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-90"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-text">
+							<span>WebStorm</span>
+							<span class="w-68">68%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-68"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-text">
+							<span>Linux</span>
+							<span class="w-85">85%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-85"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item-text">
+							<span>Github</span>
+							<span class="w-90">90%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar w-90"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<div class="row button-section">
+				<div class="col-twelve">
+					<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hablame</a>
+					<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+				</div>
+			</div>
+
+	</section> <!-- /process-->
+
+
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Destacados</h5>
+				<h1>Proyectos Destacados</h1>
+
+				<p class="lead">Pequeño recopilatorio de mis proyectos mas importantes ademas de proyectos en los cuales
+					eh colaborado para su desarrollo.</p>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row services-content">
+
+			<div id="owl-slider" class="owl-carousel services-list">
+
+				<div class="service">
+
+					<div class="card">
+						<div class="image_container">
+							<img src="{{ url_for('static', filename='images/bog2.png') }}" alt="Estudio de Abogados">
+
+						</div>
+						<div class="title">
+							<span>Estudio de abogados</span>
+						</div>
+						<div class="size">
+							<span>Languages</span>
+							<ul class="list-size">
+								<i class="techs fab fa-html5"></i>
+								<i class="techs fa-brands fa-css3-alt"></i>
+								<i class="techs fa-brands fa-node-js"></i>
+								<i class="techs fa-brands fa-bootstrap"></i>
+							</ul>
+						</div>
+
+						<div class="button-container">
+							<a href="https://github.com/tu-repo" class="github-button" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+									class="github-icon" viewBox="0 0 24 24">
+									<path
+										d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.263.793-.583 0-.287-.01-1.05-.016-2.062-3.338.725-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.204.085 1.837 1.237 1.837 1.237 1.07 1.832 2.807 1.303 3.492.997.107-.775.418-1.303.762-1.602-2.665-.303-5.467-1.333-5.467-5.933 0-1.31.468-2.383 1.237-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.01-.323 3.31 1.23a11.48 11.48 0 0 1 3.017-.405c1.02.005 2.046.138 3.018.406 2.297-1.554 3.305-1.23 3.305-1.23.655 1.653.243 2.874.12 3.177.77.84 1.236 1.912 1.236 3.222 0 4.61-2.806 5.625-5.478 5.921.43.372.823 1.104.823 2.228 0 1.61-.015 2.908-.015 3.305 0 .322.192.698.8.58C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z" />
+								</svg>
+								Ver en GitHub
+							</a>
+						</div>
+					</div>
+
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<div class="card">
+						<div class="image_container">
+							<img src="{{ url_for('static', filename='images/prox.jpg') }}" alt="Estudio de Abogados">
+
+						</div>
+						<div class="title">
+							<span>proximamente</span>
+						</div>
+						<div class="size">
+							<span>Languages</span>
+							<ul class="list-size">
+								<i class="techs fab fa-html5"></i>
+								<i class="techs fa-brands fa-css3-alt"></i>
+								<i class="techs fa-brands fa-node-js"></i>
+								<i class="techs fa-brands fa-bootstrap"></i>
+							</ul>
+						</div>
+
+						<div class="button-container">
+							<a href="https://github.com/tu-repo" class="github-button" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+									class="github-icon" viewBox="0 0 24 24">
+									<path
+										d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.263.793-.583 0-.287-.01-1.05-.016-2.062-3.338.725-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.204.085 1.837 1.237 1.837 1.237 1.07 1.832 2.807 1.303 3.492.997.107-.775.418-1.303.762-1.602-2.665-.303-5.467-1.333-5.467-5.933 0-1.31.468-2.383 1.237-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.01-.323 3.31 1.23a11.48 11.48 0 0 1 3.017-.405c1.02.005 2.046.138 3.018.406 2.297-1.554 3.305-1.23 3.305-1.23.655 1.653.243 2.874.12 3.177.77.84 1.236 1.912 1.236 3.222 0 4.61-2.806 5.625-5.478 5.921.43.372.823 1.104.823 2.228 0 1.61-.015 2.908-.015 3.305 0 .322.192.698.8.58C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z" />
+								</svg>
+								Ver en GitHub
+							</a>
+						</div>
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<div class="card">
+						<div class="image_container">
+							<img src="{{ url_for('static', filename='images/prox.jpg') }}" alt="Estudio de Abogados">
+						</div>
+						<div class="title">
+							<span>proximamente</span>
+						</div>
+						<div class="size">
+							<span>Languages</span>
+							<ul class="list-size">
+								<i class="techs fab fa-html5"></i>
+								<i class="techs fa-brands fa-css3-alt"></i>
+								<i class="techs fa-brands fa-node-js"></i>
+								<i class="techs fa-brands fa-bootstrap"></i>
+							</ul>
+						</div>
+
+						<div class="button-container">
+							<a href="https://github.com/tu-repo" class="github-button" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+									class="github-icon" viewBox="0 0 24 24">
+									<path
+										d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.263.793-.583 0-.287-.01-1.05-.016-2.062-3.338.725-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.204.085 1.837 1.237 1.837 1.237 1.07 1.832 2.807 1.303 3.492.997.107-.775.418-1.303.762-1.602-2.665-.303-5.467-1.333-5.467-5.933 0-1.31.468-2.383 1.237-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.01-.323 3.31 1.23a11.48 11.48 0 0 1 3.017-.405c1.02.005 2.046.138 3.018.406 2.297-1.554 3.305-1.23 3.305-1.23.655 1.653.243 2.874.12 3.177.77.84 1.236 1.912 1.236 3.222 0 4.61-2.806 5.625-5.478 5.921.43.372.823 1.104.823 2.228 0 1.61-.015 2.908-.015 3.305 0 .322.192.698.8.58C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z" />
+								</svg>
+								Ver en GitHub
+							</a>
+						</div>
+					</div>
+
+				</div> <!-- /service -->
+
+				<div class="service">
+
+					<div class="card">
+						<div class="image_container">
+							<img src="{{ url_for('static', filename='images/prox.jpg') }}" alt="Estudio de Abogados">
+						</div>
+						<div class="title">
+							<span>proximamente</span>
+						</div>
+						<div class="size">
+							<span>Languages</span>
+							<ul class="list-size">
+								<i class="techs fab fa-html5"></i>
+								<i class="techs fa-brands fa-css3-alt"></i>
+								<i class="techs fa-brands fa-node-js"></i>
+								<i class="techs fa-brands fa-bootstrap"></i>
+							</ul>
+						</div>
+
+						<div class="button-container">
+							<a href="https://github.com/tu-repo" class="github-button" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+									class="github-icon" viewBox="0 0 24 24">
+									<path
+										d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.263.793-.583 0-.287-.01-1.05-.016-2.062-3.338.725-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.204.085 1.837 1.237 1.837 1.237 1.07 1.832 2.807 1.303 3.492.997.107-.775.418-1.303.762-1.602-2.665-.303-5.467-1.333-5.467-5.933 0-1.31.468-2.383 1.237-3.222-.124-.303-.536-1.524.117-3.176 0 0 1.01-.323 3.31 1.23a11.48 11.48 0 0 1 3.017-.405c1.02.005 2.046.138 3.018.406 2.297-1.554 3.305-1.23 3.305-1.23.655 1.653.243 2.874.12 3.177.77.84 1.236 1.912 1.236 3.222 0 4.61-2.806 5.625-5.478 5.921.43.372.823 1.104.823 2.228 0 1.61-.015 2.908-.015 3.305 0 .322.192.698.8.58C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z" />
+								</svg>
+								Ver en GitHub
+							</a>
+						</div>
+					</div>
+
+				</div> <!-- /service -->
+
+			</div> <!-- /services-list -->
+
+		</div> <!-- /services-content -->
+
+	</section> <!-- /services -->
+
+
+	<!-- stats Section
+================================================== -->
+	<section id="stats" class="count-up">
+
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="block-1-5 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-pencil-ruler"></i>
+						</div>
+
+						<h3 class="stat-count">
+							12
+						</h3>
+
+						<h5 class="stat-title">
+							Proyectos Finalizados
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-users"></i>
+						</div>
+
+						<h3 class="stat-count">
+							8
+						</h3>
+
+						<h5 class="stat-title">
+							Clientes que no me putearon
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-badge"></i>
+						</div>
+
+						<h3 class="stat-count">
+							2
+						</h3>
+
+						<h5 class="stat-title">
+							Premios y Reconocimientos
+						</h5>
+
+					</div> <!-- /stat -->
+
+
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
+
+						<h3 class="stat-count">
+							213
+						</h3>
+
+						<h5 class="stat-title">
+							Coffee whit Milk Cups
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-clock"></i>
+						</div>
+
+						<h3 class="stat-count">
+							4200
+						</h3>
+
+						<h5 class="stat-title">
+							Horas Invertidas
+						</h5>
+
+					</div> <!-- /stat -->
+
+				</div> <!-- /stats-list -->
+
+			</div> <!-- /twelve -->
+		</div> <!-- /row -->
+
+	</section> <!-- /stats -->
+
+
+
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Portafolio</h5>
+				<h1>Otros trabajos que eh realizado</h1>
+
+				<p class="lead">Intento mantenerme activo tomando nuevos trabajos que me permiten estar al tanto de
+					las nuevas tecnologias y seguir aprendiendo.</p>
+
+			</div>
+		</div> <!-- /section-intro-->
+
+		<div class="carousel">
+			<div class="carousel-track">
+				<div class="carousel-item">
+					<img src="{{ url_for('static', filename='images/ovni.png') }}" alt="Proyecto 1">
+				</div>
+				<div class="carousel-item">
+					<img src="{{ url_for('static', filename='images/doom.png') }}" alt="Proyecto 2">
+				</div>
+				<div class="carousel-item">
+					<img src="{{ url_for('static', filename='images/shot.png') }}" alt="Proyecto 3">
+				</div>
+
+				<!-- Repite o agrega más proyectos -->
+			</div>
+		</div>
+
+		<!-- <div class="carousel2">
+			<div class="carousel-track2">
+				<div class="carousel-item2"><img src="images/pagina.png" alt="Proyecto 1"></div>
+				<div class="carousel-item2"><img src="images/pagina.png" alt="Proyecto 2"></div>
+				<div class="carousel-item2"><img src="images/pagina.png" alt="Proyecto 3"></div>
+				<!-- Repite o agrega más proyectos -->
+		</div>
+		</div> -->
+
+
+	</section> <!-- /portfolio -->
+
+	<!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Contacto</h5>
+				<h1>Me Encantaría Saber de Ti</h1>
+
+				<p class="lead">¡No dudes en ponerte en contacto! Estoy aquí para escuchar tus ideas, resolver tus dudas
+					o simplemente charlar. Si tienes alguna pregunta o sugerencia, estaré encantado de ayudarte.</p>
+
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row contact-form">
+
+			<div class="col-twelve">
+
+				<!-- form -->
+				<form name="contactForm" id="contactForm" method="post" action="">
+					<fieldset>
+
+						<div class="form-field">
+							<input name="contactName" type="text" id="contactName" placeholder="Name" value=""
+								minlength="2" required="">
+						</div>
+						<div class="form-field">
+							<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+								required="">
+						</div>
+						<div class="form-field">
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+						</div>
+						<div class="form-field">
+							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10"
+								cols="50" required=""></textarea>
+						</div>
+						<div class="form-field">
+							<button class="submitform">Enviar</button>
+							<div id="submit-loader">
+								<div class="text-loader">Sending...</div>
+								<div class="s-loader">
+									<div class="bounce1"></div>
+									<div class="bounce2"></div>
+									<div class="bounce3"></div>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+				</form> <!-- Form End -->
+
+				<!-- contact-warning -->
+				<div id="message-warning">
+				</div>
+				<!-- contact-success -->
+				<div id="message-success">
+					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				</div>
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /contact-form -->
+
+
+
+	</section> <!-- /contact -->
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+
+
+
+
+	<!-- Java Script
+   ================================================== -->
+	<script src="{{ url_for('static', filename='js/jquery-2.1.3.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
